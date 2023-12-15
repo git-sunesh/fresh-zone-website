@@ -1,0 +1,313 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.nav-bar {
+    background-color: greenyellow;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    border: 1px solid greenyellow;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.nav-bar img {
+    height: 70px;
+    width: 70px;
+    display: black;
+}
+/* ------------button--box-------------- */
+.button-box{
+   display:flex;
+   gap:30px;  
+  
+}
+.button-box a{
+    text-decoration: none;
+    color:white;
+}
+
+.button-box button {
+    background-color: greenyellow;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.button-box button:hover {
+                   /* border-bottom: 2px solid white;
+    border-right:2px solid white; */
+    cursor: pointer;
+    box-shadow: 4px 4px 3px white;
+    
+
+    
+}
+
+
+.button-box {
+    transition: all 1s;
+    transition: all 1s;
+    display:flex;
+    gap:20px;
+    animation-name: ss;
+    
+    position:relative;
+    animation-duration: 2s;
+}
+@keyframes ss{
+    from{
+        transform:translatex(100%)
+    }
+    to{
+        transform:translatex(0%)
+    }
+}
+
+
+input:checked~.button-box {
+
+    left: 0%;
+}
+
+input,
+.nav-bar i {
+     display: none; 
+}
+/* --------offer-------- */
+.fruits{
+    text-align:center;
+    margin:auto;
+     padding-top:20px; 
+    color:greenyellow;
+     border-bottom:3px solid greenyellow; 
+    width:7%;
+    /* background:linear-gradient( 80deg,red,silver); */
+}
+/* ----------fruit---things----------------- */
+.fruits-things{
+    /* background-color:silver;
+    padding:20px;
+   display:grid;
+   grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+   gap:20px; */
+   /* display:flex;
+   flex-wrap: wrap;
+   background-color: silver;
+   padding:10px;
+   justify-content: center;
+   gap:10px; */
+   background-color:silver; 
+   display:grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   gap:20px;
+   padding:20px;
+}
+.longan,.guava,.red-banana,.kiran{
+    /* box-shadow: 3px 2px 3px rgb(165, 160, 160); */
+    position:relative;
+    /* width:320px; */
+    border:2px solid silver;
+    border-radius:10px;
+    background-color:white;
+    
+}
+.all-fruit{
+    /* width:320px; */
+    border:2px solid silver;
+    border-radius:10px;
+    background-color:white;
+
+}
+.longan button,.guava button,.red-banana button{
+    position:absolute;
+    right:0;
+    background-color:rgb(72, 196, 72);
+    border-bottom-left-radius:20px;
+    width:20%;
+    color:white;
+    padding:5px;
+    border:none;
+    font-size:16px;
+    display: block;
+}
+.img{
+
+
+    
+    text-align: center;
+      margin:auto; 
+      margin-top:30px; 
+     
+}
+
+.img img{
+    height:180px;
+    width:180px;
+    
+    
+}
+.img img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 1s;
+
+}
+/* ----name--kg------ */
+.name-kg{
+    display:flex;
+    justify-content:space-between;
+    font-weight:500;
+    padding:15px;
+}
+
+
+.content{
+    padding:10px;
+    color:black;
+    line-height: 22px;
+    font-weight: 300;
+    font-size:18px;
+    
+}
+.farmer{
+    border-bottom:3px solid silver;
+    padding-left:10px;
+    width:60%;
+    margin-left:10px;
+    
+}
+.farmer img{
+    height:20px;
+    width:20px;
+    display: inline;
+}
+.farmer span{
+    font-size:20px;
+}
+.mrp-add{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    padding-top:20px;
+}
+.mrp-add div:nth-child(2){
+    background-color: rgb(96, 188, 96);
+    color:white;
+    font-size:15px;
+    padding:10px;
+    border-radius:5px;
+
+}
+.mrp-add div:first-child{
+    color:rgb(123, 184, 33);
+}
+/* --------------------------------mobile--------------------------------------- */
+@media screen and (min-width:320px) and (max-width:500px){
+.nav-bar i {
+    display: inline-block;
+}
+.button-box {
+    position: fixed;
+    top: 76px;
+    left: -100%;
+    width: 100%;
+
+    height: 60vh; 
+    background-color: silver;
+    opacity: 0.9;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    align-items:center;
+    text-align: center;
+    
+
+}
+
+.button-box button {
+    color: white;
+    background-color: greenyellow;
+    
+    padding: 6px;
+    border-radius: 6px;
+    text-align: center;
+    width: 50%;
+
+
+}
+
+.fruits{
+    width:30%;
+}
+/* ------fruit--things--------------- */
+ .fruits-things{
+       /* display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    gap:20px; 
+       */
+
+}}
+/* ---------------------------------tablet---------------------------------- */
+@media screen and (min-width:500px) and (max-width:800px){
+    .nav-bar i {
+        display: inline-block;
+    }
+    .button-box {
+        position: fixed;
+        top: 76px;
+        left: -100%;
+        width: 100%;
+    
+        height: 60vh; 
+        background-color: silver;
+        opacity: 0.9;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:10px;
+        align-items:center;
+        text-align: center;
+        
+    
+    }
+    .nav-bar{
+        width:100%;
+    }
+    
+    .button-box button {
+        color: white;
+        background-color: greenyellow;
+        
+        padding: 6px;
+        border-radius: 6px;
+        text-align: center;
+        width: 30%;
+    
+    
+    }
+    .fruits{
+        width:12%;
+    }
+.fruits-things{
+    /* display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:15px;
+    width:100%;
+    padding:10px;
+} */
+flex-wrap: wrap;
+width:100%;
+padding:10px;
+}
+}

@@ -1,0 +1,509 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.nav-bar {
+    background-color: greenyellow;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    border: 1px solid greenyellow;
+    position:sticky;
+    top:0;
+}
+
+.nav-bar img {
+    height: 70px;
+    width: 70px;
+    display: black;
+}
+/* ------------button--box-------------- */
+/* .button-box{
+    
+
+    position: fixed;
+    top: 76px;
+    left: -100%;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+    opacity: 0.9;
+    cursor: pointer;
+    z-index: 998;
+} */
+.button-box a{
+    text-decoration: none;
+    color:white;
+}
+
+.button-box button {
+    background-color: greenyellow;
+    color: white;
+    border: none;
+    font-size: 20px;
+    
+}
+
+.button-box button:hover{
+
+border-bottom: 2px solid white;
+
+    cursor: pointer;
+     
+}
+
+.button-box {
+    transition: all 1s;
+    display:flex;
+    gap:20px;
+    animation-name: ss;
+    
+    position:relative;
+    animation-duration: 2s;
+}
+@keyframes ss{
+    from{
+        transform:translatex(100%)
+    }
+    to{
+        transform:translatex(0%)
+    }
+}
+
+
+
+input:checked~.button-box {
+
+    left: 0%;
+}
+
+input,
+.nav-bar i {
+     display: none; 
+}
+/* --------offer-------- */
+.offer{
+    text-align:center;
+    margin:auto;
+     padding-top:20px; 
+    color:greenyellow;
+     border-bottom:3px solid greenyellow; 
+    width:7%;
+    /* background:linear-gradient( 80deg,red,silver); */
+}
+
+.offer-things{
+    background-color:silver; 
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap:20px;
+    padding:20px;
+}
+.ladies-finger,.amaranthus-green,.cor-leaves,.orange,.cal-flower,.lvy-gourd,.potato,.tomato,.papaya{ 
+   
+    box-shadow: 4px 5px 3px #c0c0c0;
+    background-color: white;
+    border-radius:6px;
+    
+   
+    
+
+    
+    
+}
+
+     .offer-things button{
+
+     
+    width:30%;
+    padding:10px;
+    background-color:palevioletred;
+    border-top-right-radius:12px;
+    color:white;
+    font-size: 15px;
+    border:none;
+    
+}
+.img{
+
+
+    
+    text-align: center;
+      margin:auto; 
+      margin-top:30px; 
+     
+}
+
+.img img{
+    height:200px;
+    width:200px;
+    
+    
+}
+.img img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 1s;
+
+}
+
+.name-kg{
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+    font-weight: 800;
+}
+.lf-content,.ag-content,.cor-content,.org-content,.cal-flower-content,.lvy-gourd-content,.potato-content,.tomato-content,.papaya-content{
+    padding:10px;
+    color:rgba(71, 68, 68, 0.491);
+    line-height: 20px;
+    font-weight: 600;
+}
+.farmer{
+    border-bottom:3px solid silver;
+    padding-left:10px;
+    width:50%;
+    margin-left:10px;
+}
+.farmer img{
+    height:20px;
+    width:20px;
+    display: inline;
+}
+.farmer span{
+    font-size:20px;
+}
+.mrp-add{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.mrp-add div:nth-child(2){
+    background-color: rgb(96, 188, 96);
+    color:white;
+    font-size:15px;
+    padding:10px;
+    border-radius:5px;
+
+}
+.mrp-add div:first-child{
+    color:rgb(123, 184, 33);
+}
+/* ---popular---- */
+.papular{
+    
+    
+    font-size:22px;
+    font-weight: 600;
+    padding:10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top:20px;
+
+}
+.papular:hover{
+    background-color:aqua;
+
+    cursor: pointer;
+
+    
+    border-radius:15px;
+}
+
+  /* -------section-1------------ */
+  /* ----fresh--container----- */
+  .fresh-container{
+
+    padding:20px;
+    font-size:20px;
+    font-weight: 600;
+    color:rgb(76, 73, 73);
+    border-bottom:2px solid silver;
+    display:flex;
+    justify-content: space-around;
+    align-items: start;
+    
+    
+  }
+  .fresh-zone{
+    width:30%;
+  }
+  .fresh-zone:hover{
+    color:red;
+    cursor: pointer;
+  }
+  .fresh-container p:nth-child(n+1){
+    padding-bottom:10px;
+  }
+  /* .fresh-container p:nth-child(2){
+    padding-bottom:10px;
+  }
+  .fresh-container p:nth-child(3){
+    padding-bottom:10px;
+  } */
+  .logo-fresh{
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    
+  } 
+  /* ----know-us---- */
+  .know-us div:nth-child(n+2),.links div:nth-child(n+2){
+       font-weight:500;
+       line-height: 40px;
+       font-size: 25px;
+  }
+/* --------popular------------ */
+.papular {
+    
+    line-height: 30px;
+}
+.papular span{
+    color:rgb(55, 207, 55);
+}
+/* ---------contact--------- */
+.stay-con{
+ display:flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.stay-con a{
+    height:35px;
+    width:35px;
+    border-radius:5px;
+    cursor: pointer;
+    text-align: center;
+}
+ .stay-con .stay-con-i a:last-child{
+    color:green;
+}
+.stay-con-i{
+    display:flex;
+    gap:30px;
+    font-size: 30px;
+    
+}
+/* .stay-con .stay-con-i a:last-child:hover{
+    color:white;
+    color:greenyellow;
+    
+} */
+.stay-con .stay-con-i a:nth-child(3){
+    color:rgb(0, 34, 255);
+}  
+/* .stay-con .stay-con-i a:nth-child(3):hover{
+    color:rgb(0, 34, 255);
+} */
+.stay-con .stay-con-i a:nth-child(2){
+     color:rgb(231, 59, 93);
+} 
+
+
+ .stay-con .stay-con-i a:first-child{
+    color:rgb(85, 85, 218);
+} 
+
+
+
+/* ----------------mobile------------------------------------------------------------------------- */
+@media screen and (min-width:320px) and (max-width:500px) {
+    
+
+    .nav-bar i {
+        display: inline-block;
+    }
+
+    .button-box {
+        position: fixed;
+        top: 76px;
+        left: -100%;
+        width: 100%;
+
+        height: 60vh; 
+        background-color: silver;
+        opacity: 0.9;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:10px;
+        align-items:center;
+        text-align: center;
+        
+
+    }
+
+    .button-box button {
+        color: white;
+        background-color: greenyellow;
+        
+        padding: 6px;
+        border-radius: 6px;
+        text-align: center;
+        width: 50%;
+
+
+    }
+
+    .button-box button:hover {
+        cursor: pointer;
+        background-color: greenyellow;
+        color: white;
+        
+    } 
+    /* -----------offer-things----------*/
+     .offer-things{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap:20px;
+        width:100%;
+     }
+        
+    
+    .ladies-finger,.amaranthus-green,.cor-leaves,.orange,.cal-flower,.lvy-gourd,.potato,.tomato,.papaya{
+        
+          /* flex-wrap:wrap; */
+    }
+    .offer{
+    width:30%;
+    }
+    /* -------section-1------------ */
+    .fresh-container{
+        flex-direction: column;
+        gap:30px;
+        width:100%;
+    
+        
+    }
+    .stay-con{
+        display: flex;
+        flex-direction: column;
+    }
+    /* --------papolar-------------- */
+    .papular{
+        width:100%;
+    }
+    .fresh-zone{
+        width:100%;
+    }
+    
+}
+/* -------------------------------------------------------------tablet---------------------------------------- */
+@media screen and (min-width:500px) and (max-width:800px){
+    /* ------offer-things---------- */
+    /* .background {
+        background: url(./veg\ css.jpg);
+         background-size: cover;
+         background-repeat: no-repeat;
+         height: 350px;
+ 
+         width: 100%;
+ 
+ 
+     }
+     
+  */
+     .nav-bar i {
+
+         display: inline-block;
+     }
+ 
+     .button-box {
+         position: fixed;
+         top: 76px;
+         left: -100%;
+         width: 100%;
+ 
+         height: 61vh; 
+         background-color: silver;
+         opacity: 0.9;
+         cursor: pointer;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         gap:10px;
+         align-items:center;
+         text-align: center;
+         
+ 
+     }
+ 
+     .button-box button {
+         color: white;
+         background-color: greenyellow;
+         /* display: flex;
+         justify-content: center;
+         flex-direction: column;
+           */
+         padding: 6px;
+         border-radius: 6px;
+         text-align: center;
+         width: 30%;
+ 
+     }
+ 
+     .button-box button:hover {
+         cursor: pointer;
+         background-color: greenyellow;
+         color: white;
+         
+     } 
+     /* --------------offer----------------- */
+     
+        .offer{
+            text-align:center;
+            margin:auto;
+             padding-top:20px; 
+            color:greenyellow;
+             
+    
+
+        }
+     
+     /* -----------offer-things----------*/
+     .offer-things{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap:20px;
+        width:100%;
+     }
+        
+     
+     
+     .offer{
+     width:20%;
+     }
+     /* -------section-1------------ */
+     .fresh-container{
+         flex-direction: column;
+         gap:30px;
+         width:100%;
+         
+     }
+     .stay-con{
+    
+        
+     }
+     /* --------papolar-------------- */
+     .papular{
+         width:100%;
+     }
+     .fresh-zone{
+         width:100%;
+     }
+     .farmer{
+        
+        width:63%;
+     }
+} 
+    
+    
